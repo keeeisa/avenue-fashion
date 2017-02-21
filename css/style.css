@@ -27,6 +27,12 @@ a:visited{
   bottom:0;
   max-width:100%;
 }
+.wave-2{
+  position:absolute;
+  bottom:0;
+  max-width:100%;
+  opacity:0.6;
+}
 .navigation{
   display:flex;
   vertical-align: middle;
