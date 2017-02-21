@@ -15,11 +15,17 @@ a:visited{
   max-width:1170px;
   margin:0 auto;
 }
-/*--------------header----------------*/
+/*--------------header navigation----------------*/
 #hero{
   background-color: #648cff;
   height:100vh;
   background-size:cover;
+  position:relative;
+}
+.wave{
+  position:absolute;
+  bottom:0;
+  max-width:100%;
 }
 .navigation{
   display:flex;
@@ -27,8 +33,9 @@ a:visited{
 }
 .logo{
   text-transform: uppercase;
-  font-size:2em;
+  font-size:1.5em;
   justify-content:flex-start;
+  padding-top:1em;
 }
 .nav-items{
   text-align:center;
@@ -38,7 +45,17 @@ a:visited{
   max-width: 573px;
   margin:0 auto;
 }
+.nav-items a{
+  padding:1.5em;
+  font-size:1.125em;
+  font-weight:300;
+}
 .social-icons{
   display:flex;
   justify-content: flex-end;
+  margin-top:0.5625em;
 }
+.social-icons a{
+  padding: 1em;
+}
+/*--------------header hero image----------------*/
