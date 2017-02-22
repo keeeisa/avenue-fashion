@@ -14,6 +14,15 @@ a:visited{
 .wrapper{
   max-width:1170px;
   margin:0 auto;
+  position:relative;
+}
+.btn-primary{
+  padding:20px 45px;
+  background-color: #fc6a42;
+  border-radius:5px;
+  font-weight:600;
+  font-size:1.125em;
+  margin-top:63px;
 }
 /*--------------header navigation----------------*/
 #hero{
@@ -65,3 +74,25 @@ a:visited{
   padding: 1em;
 }
 /*--------------header hero image----------------*/
+.header-container{
+  position:absolute;
+  z-index:1;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  height:76vh;
+  max-width:40%;
+}
+
+.punchline{
+  font-size:3.75em;
+  color:white;
+  font-weight:500;
+}
+p.white{
+  color:white;
+  font-size: 1.125em;
+  font-weight:300;
+  line-height:1.6;
+  padding-top:30px
+}
