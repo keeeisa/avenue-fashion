@@ -22,6 +22,14 @@ a:visited{
   border-radius:5px;
   font-weight:600;
   font-size:1.125em;
+  margin-right:10px;
+}
+.btn-secondary{
+  padding:20px 45px;
+  background-color: #4466c9;
+  border-radius:5px;
+  font-weight:600;
+  font-size:1.125em;
   margin-top:63px;
 }
 /*--------------header navigation----------------*/
@@ -80,8 +88,8 @@ a:visited{
   display:flex;
   flex-direction:row;
   align-items: center;
-  height:76vh;
-  max-width:40%;
+  height:90vh;
+  /*max-width:40%;*/
 }
 
 .punchline{
@@ -94,5 +102,23 @@ p.white{
   font-size: 1.125em;
   font-weight:300;
   line-height:1.6;
-  padding-top:30px
+  padding-top:15px;
+  margin-bottom:70px;
+}
+.img-hero{
+  width:60%;
+}
+.call-to-action{
+  padding-right: 13%;
+}
+.scroll-down{
+  background-color:white;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
