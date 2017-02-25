@@ -32,6 +32,14 @@ a:visited{
   font-size:1.125em;
   margin-top:63px;
 }
+section h1{
+  font-size: 2.25em;
+  color:#648cff;
+  font-weight:500;
+  text-transform:uppercase;
+  text-align:center;
+}
+
 /*--------------header navigation----------------*/
 #hero{
   background-color: #648cff;
@@ -51,20 +59,30 @@ a:visited{
   opacity:0.6;
 }
 .navigation{
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
   vertical-align: middle;
 }
 .logo{
   text-transform: uppercase;
   font-size:1.5em;
-  justify-content:flex-start;
+  -webkit-box-pack:start;
+      -ms-flex-pack:start;
+          justify-content:flex-start;
   padding-top:1em;
 }
 .nav-items{
   text-align:center;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction:row;
-  justify-content: space-around;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:row;
+          flex-direction:row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   max-width: 573px;
   margin:0 auto;
 }
@@ -74,8 +92,12 @@ a:visited{
   font-weight:300;
 }
 .social-icons{
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-top:0.5625em;
 }
 .social-icons a{
@@ -85,9 +107,16 @@ a:visited{
 .header-container{
   position:absolute;
   z-index:1;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction:row;
-  align-items: center;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:row;
+          flex-direction:row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height:90vh;
   /*max-width:40%;*/
 }
@@ -106,7 +135,10 @@ p.white{
   margin-bottom:70px;
 }
 .img-hero{
-  width:60%;
+  /*width:60%;*/
+}
+.img-hero img{
+  max-width:480px;
 }
 .call-to-action{
   padding-right: 13%;
@@ -120,5 +152,13 @@ p.white{
   bottom: 2%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  box-shadow: 3px 3px 40px rgba(68, 102, 201, .5);
+  display:block;
 }
+.arrow{
+  padding-top:24px;
+  padding-left:20px;
+}
+/*--------------section-features----------------*/
