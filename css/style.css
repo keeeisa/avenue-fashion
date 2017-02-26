@@ -39,6 +39,11 @@ section h1{
   text-transform:uppercase;
   text-align:center;
 }
+.lead-center{
+  font-size:1.125em;
+  color:#999;
+  text-align:center;
+}
 
 /*--------------header navigation----------------*/
 #hero{
@@ -162,3 +167,22 @@ p.white{
   padding-left:20px;
 }
 /*--------------section-features----------------*/
+.features-container, .feature-col{
+  display:flex;
+  align-items: flex-start;
+
+}
+.feature-description h2{
+  margin-top:0;
+  font-size:1.5em;
+  color:#353854;
+}
+.feature-description{
+  padding: 0 5%;
+}
+.feature-description p{
+  font-size:1em;
+  color:#aeaeae;
+  line-height:1.5;
+  font-weight:300;
+}
