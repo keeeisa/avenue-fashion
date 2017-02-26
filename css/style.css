@@ -38,11 +38,13 @@ section h1{
   font-weight:500;
   text-transform:uppercase;
   text-align:center;
+  margin-top:130px;
 }
 .lead-center{
   font-size:1.125em;
   color:#999;
   text-align:center;
+  margin-bottom:112px;
 }
 
 /*--------------header navigation----------------*/
