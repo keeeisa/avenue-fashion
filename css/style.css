@@ -1,6 +1,13 @@
 *{
   box-sizing: border-box;
 }
+.cf:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
 body{
   font-family: 'Ubuntu', sans-serif;
   background-image: url('../img/body-bg.png');
@@ -172,7 +179,9 @@ p.white{
   padding-left:20px;
 }
 /*--------------section-features----------------*/
-
+.margin-sm{
+  margin-bottom:50px;
+}
 .features-container, .feature-col{
   display:flex;
   align-items: flex-start;
@@ -192,10 +201,14 @@ p.white{
   line-height:1.5;
   font-weight:300;
 }
+/*--------------section-widgets----------------*/
+section#widgets{
+  height:900px;
+}
 .screen-container{
   position:relative;
 }
-.screen-1, .screen-2, .screen-3{
+.screen-1, .screen-2, .screen-3, .right-arrow, .left-arrow{
   position:absolute;
 }
 .screen-1{
@@ -211,4 +224,11 @@ p.white{
   right:10%;
   margin-top:66px;
   z-index:-1;
+}
+.right-arrow{
+  right:0;
+  margin-top:316px;
+}
+.left-arrow{
+  margin-top:316px;
 }
