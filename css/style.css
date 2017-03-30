@@ -234,15 +234,22 @@ section#widgets{
   margin-top:316px;
 }
 /*--------------section-screenshots----------------*/
+.col-2{
+  display:flex;
+  margin-top:140px;
+}
 .image{
   position:relative;
 }
+.image, .text{
+  width:50%;
+}
 .cloudy-screen{
   margin-top:85px;
-  left:5%
+  left:15%
 }
 .cloudy-text{
-  margin: 45px 0 0 20%;
+  margin: 45px 0 0 42%;
 }
 .circle-yellow{
   width:92px;
@@ -251,9 +258,9 @@ section#widgets{
   border-radius:100%;
   position:absolute;
   top:251px;
-  left:26.6%;
+  left:55.6%;
 }
-.circle-yellow p{
+.circle-yellow p,.circle-orange p{
   text-align: center;
   margin-top: 35px;
   color:white;
@@ -267,11 +274,54 @@ section#widgets{
   border-radius:100%;
   position:absolute;
   top:471px;
+  left:4%;
 }
-.circle-blue p{
+.circle-blue p,.circle-red p{
   text-align: center;
   margin-top: 30px;
   color:white;
   font-size:28px;
   font-weight:500;
+}
+.col-h1{
+  text-align:left;
+  margin-top:171px;
+}
+.col-h1::before{
+  content:url("../img/icon-cloudy.png ");
+  display:block;
+  margin-bottom:30px;
+}
+.col-p{
+  font-size:24px;
+  color:#353854;
+  line-height:1.7;
+  max-width:90%;
+}
+.col-p::after{
+  content:url("../img/icons-round-cloudy.png ");
+  display:block;
+  margin-top:35px;
+}
+/*--------------section-screenshots-reverse----------------*/
+.reverse{
+  order:2;
+}
+.circle-orange{
+  width:92px;
+  height:92px;
+  background-color:#f2a14e;
+  border-radius:100%;
+  position:absolute;
+  top:251px;
+  left:55.6%;
+}
+.circle-red{
+  width:92px;
+  height:92px;
+  background-color:#fc6a42;
+  border-radius:100%;
+  position:absolute;
+  top:471px;
+  left:4%;
 }
