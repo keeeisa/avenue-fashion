@@ -352,11 +352,73 @@ section#widgets{
 }
 .review-col{
   width:50%;
-
+  margin:50px 0 ;
 }
 .review-col-p{
   font-size:24px;
   color:#353854;
   line-height:1.7;
   max-width:90%;
+  margin-top:10px;
+}
+.review-col-name{
+  font-size: 18px;
+}
+.review-col::before{
+  content:url("../img/block-quote.png");
+  padding-top: 100px;
+}
+.review-col::after{
+  content:url("../img/block-quote.png");
+  float:right;
+  padding-right:100px;
+}
+.review-row:last-child{
+  margin-bottom:10%;
+}
+/*--------------section-download----------------*/
+/*.blue, .download-col{
+  display:flex;
+  flex-direction:column;
+}*/
+.blue .wrapper{
+  /*align-content: center;*/
+  display:flex;
+  flex-direction:row;
+}
+#download.blue{
+  background-color:#648cff;
+  background-image: url('../img/body-bg-blue.png');
+  background-repeat: repeat-x repeat-y;
+  height:450px;
+}
+.h1-white, .p-white{
+  color:white;
+  text-align: left;
+}
+.p-white{
+  font-size:18px;
+  line-height:1.7;
+  margin:30px 0 45px 0;
+  padding-right:10%;
+}
+.h1-white{
+  margin-top:
+}
+.download-col{
+  display:flex;
+  width:50%;
+  flex-direction: column;
+}
+.download-col-2{
+  width:50%;
+}
+.download-screens{
+  margin-top: 70px;
+}
+/*--------------section-footer----------------*/
+footer.footer{
+  background-color:#353854;
+  height:300px;
+  z-index:999;
 }
